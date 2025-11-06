@@ -10,10 +10,10 @@ namespace azure_web_app.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly ProductService _productService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, ProductService productService)
         {
             _logger = logger;
-            _productService = new ProductService();
+            _productService = productService;
         }
 
         public IActionResult Index()

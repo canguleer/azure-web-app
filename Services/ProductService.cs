@@ -4,6 +4,7 @@ namespace azure_web_app.Services
 {
     /// <summary>
     /// Service demonstrating the difference between ToList() and AsEnumerable()
+    /// This service is for educational/demonstration purposes to show LINQ best practices.
     /// </summary>
     public class ProductService
     {
